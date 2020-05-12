@@ -3,7 +3,7 @@
 clear
 clc
 
-load('data_F4C.mat');
+load('data.mat');
 
 % Other important derived parameters
 m_prime = m / (q * S);
@@ -34,3 +34,6 @@ B_prime = [V0 * X_eta, V0 * Z_eta, V0 * M_eta, 0]';
 % Concise state space form
 A = M\A_prime;
 B = M\B_prime;
+
+% Save the state matrix and input vector
+save('long.mat', 'A', 'B', 'V0');

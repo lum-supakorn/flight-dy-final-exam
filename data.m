@@ -15,7 +15,7 @@ body_incidence = 6.3; % {deg} Body incidence
 % Aircraft geometry
 S = 330.980; % {m^2} Wing area
 b = 51.787; % {m} Wingspan
-mac = S / wingspan; % {m} Mean aerodynamic chord
+mac = S / b; % {m} Mean aerodynamic chord
 
 % Inertial parameters
 m = 212100; % {kg} Mass
