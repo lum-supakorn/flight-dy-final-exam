@@ -3,7 +3,7 @@
 clear
 clc
 
-load('lat_dir.mat');
+load('data/lat_dir.mat');
 
 % Output matrix
 C = ...

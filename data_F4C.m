@@ -64,4 +64,4 @@ N_xi = 0.00084;
 N_zeta = -0.0741;
 
 % Save workspace to file
-save('data_F4C.mat');
+save('data/data_F4C.mat');

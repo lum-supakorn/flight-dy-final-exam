@@ -62,4 +62,4 @@ N_xi = 0.0024;
 N_zeta = -0.0821;
 
 % Save workspace to file
-save('data.mat');
+save('data/data.mat');

@@ -4,7 +4,7 @@
 clear
 clc
 
-load('data.mat');
+load('data/data.mat');
 
 % Other important derived parameters
 m_prime = m / (q * S);
@@ -45,4 +45,4 @@ A = M\A_prime;
 B = M\B_prime;
 
 % Save the state matrix and input vector
-save('lat_dir.mat', 'A', 'B', 'V0');
+save('data/lat_dir.mat', 'A', 'B', 'V0');

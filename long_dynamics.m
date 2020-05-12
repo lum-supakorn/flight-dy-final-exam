@@ -3,7 +3,7 @@
 clear
 clc
 
-load('long.mat');
+load('data/long.mat');
 
 % Output matrix
 C = ...
