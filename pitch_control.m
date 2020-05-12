@@ -1,10 +1,5 @@
 % Pitch control
 
-clear
-clc
-
-load('data/long_tf.mat');
-
 ele_input = deg2rad(11);
 
 % Open-loop step response
@@ -18,3 +13,9 @@ sys_cl = feedback(alpha_eta, 1);
 step(ele_input * sys_cl, t);
 ylabel('Pitch angle {rad}');
 title('Closed-loop step response');
+
+% Goal
+% Overshoot less than 10%
+% Rise time less than 2 seconds
+% Settling time less than 10 seconds
+% Steady-state error less than 2%
