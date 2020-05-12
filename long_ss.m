@@ -1,4 +1,5 @@
 % Longitudinal state space construction
+% Referred to the body-fixed axis!
 
 clear
 clc

@@ -1,9 +1,10 @@
 % Longitudinal state space construction
+% Referred to the body-fixed axis!
 
 clear
 clc
 
-load('data_F4C.mat');
+load('data.mat');
 
 % Other important derived parameters
 m_prime = m / (q * S);
@@ -42,3 +43,6 @@ B_prime = ...
 % Concise state space form
 A = M\A_prime;
 B = M\B_prime;
+
+% Save the state matrix and input vector
+save('lat_dir.mat', 'A', 'B', 'V0');

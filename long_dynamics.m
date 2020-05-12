@@ -22,7 +22,7 @@ D = zeros(size(B, 2), size(C, 1))';
 % State-space construction
 [num, den] = ss2tf(A, B, C, D);
 
-% All parameters are per radians
+% All parameters are per radian
 u_eta = tf(num(1, :), den);
 w_eta = tf(num(2, :), den);
 q_eta = tf(num(3, :), den);
