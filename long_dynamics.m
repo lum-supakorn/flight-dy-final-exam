@@ -29,3 +29,5 @@ q_eta = tf(num(3, :), den);
 theta_eta = tf(num(4, :), den);
 alpha_eta = tf(num(5, :), den);
 gamma_eta = tf(num(6, :), den);
+
+save('data/long_tf.mat', 'alpha_eta');
