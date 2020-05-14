@@ -21,12 +21,14 @@ damp(sys)
 % Short-period damping ratio >= 0.5
 % Short-period undamped natural frequency >= 0.8 and <= 3.0 rad/s
 
-t = 0:0.1:10;
+t = 0:0.1:25;
 
-% subplot(1,2,1);
-step(sys, t)
+step(sys, t);
+hold on;
 
-% Closed-loop with gain
-% sys_cl = feedback(sys, 0.5);
-% subplot(1,2,2);
-% step(sys_cl, t);
+sys_cl = feedback(sys, -0.5);
+step(sys_cl, t);
+
+% Root locus
+% k = -100:0.01:10;
+% rlocus(sys, k);
