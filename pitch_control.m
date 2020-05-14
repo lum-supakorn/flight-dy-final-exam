@@ -10,7 +10,7 @@ t = 0:0.01:1000;
 
 % Closed-loop step response
 sys_cl = feedback(q_eta * ele_input, 1);
-step(ele_input * sys_cl, t);
+step(sys_cl, t);
 ylabel('Pitch angle {rad}');
 title('Closed-loop step response');
 

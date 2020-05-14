@@ -9,7 +9,7 @@ clc
 
 s = tf('s');
 num = -4.66 * s * (s + 0.133) * (s + 0.269);
-den = (s^2 + 0.015 * s + 0.021) * (s^2 + 0.911 * s + 4.884);
+den = (s^2 + (0.015 * s) + 0.021) * (s^2 + (0.911 * s) + 4.884);
 
 sys = num/den;
 
@@ -23,10 +23,10 @@ damp(sys)
 
 t = 0:0.1:10;
 
-subplot(1,2,1);
+% subplot(1,2,1);
 step(sys, t)
 
 % Closed-loop with gain
-sys_cl = feedback(sys, 0.5);
-subplot(1,2,2);
-step(sys_cl, t);
+% sys_cl = feedback(sys, 0.5);
+% subplot(1,2,2);
+% step(sys_cl, t);
