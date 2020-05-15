@@ -1,0 +1,3 @@
+% 2-s pulse input for ailerons
+
+u = heaviside(t)
